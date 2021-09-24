@@ -1,0 +1,15 @@
+.NavBar {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.NavItem {
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.NavItem:hover {
+    cursor: pointer;
+    background-color: salmon;
+}

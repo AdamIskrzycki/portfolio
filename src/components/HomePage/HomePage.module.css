@@ -1,0 +1,33 @@
+.HomePageContainer {
+    width: 80vw;
+    margin: 5vw 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 30px;
+    grid-template-areas: "s1 s3" 
+                         "s2 s3" 
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.Image {
+    grid-area: s1;
+    width: 280px;
+    height: 259px;
+}
+
+.Greetings {
+    grid-area: s2;
+    width: 250px;
+    font-size: 65px;
+    background-color: red;
+}
+
+.AboutMe {
+    grid-area: s3;
+    background-color: green;
+}
