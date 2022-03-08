@@ -1,6 +1,7 @@
 .NavBar {
     display: flex;
-    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
 }
 
 .NavItem {

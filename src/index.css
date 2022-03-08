@@ -16,6 +16,7 @@ body {
     rgba(250, 128, 114, 1) 100%
   );
   color: black;
+  overflow-x: hidden;
 }
 
 code {

@@ -2,9 +2,11 @@ import React from "react";
 import classes from "./HomePage.module.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
+import ProjectsGalery from "../ProjectsGalery/ProjectsGalery";
 
 const HomePage = () => {
   return (
+    <>
     <div className={classes.HomePageContainer}>
       <div className={classes.Image}>
         <img alt="AdamIskrzycki" src="AdamIskrzycki.png"></img>
@@ -33,7 +35,10 @@ const HomePage = () => {
           </div>
         </Link>
       </section>
+      
     </div>
+    <ProjectsGalery />
+    </>
   );
 };
 
