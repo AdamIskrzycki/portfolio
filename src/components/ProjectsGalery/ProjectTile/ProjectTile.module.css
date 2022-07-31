@@ -1,7 +1,53 @@
 .ProjectTile {
-    width: 40%;
-    height: 200px;
-    border: 2px solid black;
+    width: 90%;
+    height: 520px;
+    border-radius: 10px;
     text-align: center;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: background-size;
+    transition: transform 0.7s ease-in-out;
 }
 
+.ProjectTile:hover {
+    background-color: white;
+    transform: scale(1.06);
+    opacity: 0.95;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  }
+
+.ProjectInfoHidden {
+    visibility: hidden;
+}
+.ProjectInfoVisible {
+    margin-top: 30px;
+    width: 90%;
+    height: 520px;
+    display: grid;
+    grid-template-areas: " s1 s3 "
+                         " s2 s4 "
+                         " s2 s5 ";
+}
+
+.Title {
+    grid-area: s1;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.Description {
+    grid-area: s2
+}
+
+.Tools {
+    grid-area: s3
+}
+
+.DemoURL {
+    grid-area: s4
+}
+
+.GithubRepoURL {
+    grid-area: s5
+}

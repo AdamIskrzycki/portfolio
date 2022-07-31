@@ -30,7 +30,7 @@ img {
 
 .Hello {
   width: 100%;
-  color: #ffa733;
+  color: #e62c2c;
 }
 
 .AboutMeContainer {
@@ -61,7 +61,7 @@ img {
 }
 
 .ProjectsIcon:hover {
-  color: #ffa733;
+  color: #e62c2c;
   cursor: pointer;
   transform: scale(1.3, 1.2);
   transition: transform 200ms ease-in-out;

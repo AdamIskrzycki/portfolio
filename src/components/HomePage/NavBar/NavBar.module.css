@@ -2,6 +2,7 @@
     display: flex;
     position: fixed;
     top: 0;
+    visibility: hidden;
 }
 
 .NavItem {
@@ -13,5 +14,5 @@
 
 .NavItem:hover {
     cursor: pointer;
-    background-color: #FFA733;
+    background-color: #cc3b3b;
 }

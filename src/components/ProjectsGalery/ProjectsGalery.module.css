@@ -4,10 +4,10 @@
 
 .MyProjectsHeader {
     text-align: center;
-    font-size: 46px;
+    font-size: 54px;
     font-weight: 500;
     letter-spacing: 2px;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .ProjectsContainer {
@@ -15,7 +15,7 @@
     width: 90%;
     margin: 50px 5%;
     justify-content: center;
-    row-gap: 100px;
+    row-gap: 150px;
     column-gap: 70px;
     flex-wrap: wrap;
 }

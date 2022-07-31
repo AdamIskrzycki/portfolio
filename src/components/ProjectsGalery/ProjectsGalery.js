@@ -7,8 +7,14 @@ const ProjectsGalery = () => {
     return <div className={classes.ProjectsGalery}>
         <header className={classes.MyProjectsHeader}>MY PROJECTS</header>
         <section className={classes.ProjectsContainer}>
-            {ProjectList.map(el => {
-                return <ProjectTile/>
+            {ProjectList.map((el, index) => {
+                return <ProjectTile 
+                title={ProjectList[index].title}
+                imageURL={ProjectList[index].imageURL}
+                description={ProjectList[index].description}
+                tools={ProjectList[index].tools}
+                demoURL={ProjectList[index].demoURL}
+                githubRepoURL={ProjectList[index].githubRepoURL}/>
             })}
             
         </section>
