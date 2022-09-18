@@ -1,0 +1,27 @@
+.Footer {
+    border-top: 2px solid #000;
+    display: flex;
+    color: #ff9b2a;
+    height: 170px;
+    background-color: #000;
+    align-items: center;
+}
+
+.FeelFree {
+    font-size: 50px;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.ContactInfo {
+    flex-grow: 1;
+}
+
+.Icon {
+    font-size: 140px;
+}
+
+.GitHub {
+    flex-grow: 1;
+}
+

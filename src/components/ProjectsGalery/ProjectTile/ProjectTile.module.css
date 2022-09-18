@@ -8,46 +8,64 @@
     background-repeat: no-repeat;
     transform: background-size;
     transition: transform 0.7s ease-in-out;
+    box-shadow: 8px 5px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .ProjectTile:hover {
-    background-color: white;
+    background-color: #F7F7F7;
     transform: scale(1.06);
     opacity: 0.95;
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out, background-color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
   }
 
 .ProjectInfoHidden {
     visibility: hidden;
 }
 .ProjectInfoVisible {
-    margin-top: 30px;
     width: 90%;
-    height: 520px;
     display: grid;
-    grid-template-areas: " s1 s3 "
-                         " s2 s4 "
-                         " s2 s5 ";
+    grid-template-areas: " s1 s4 "
+                         " s2 . "
+                         " s3 s5 ";
 }
 
 .Title {
     grid-area: s1;
+    margin: auto 0;
     font-size: 50px;
     text-transform: uppercase;
 }
 
 .Description {
-    grid-area: s2
+    grid-area: s2;
+    width: 50%;
+    margin: 20px auto;
+    font-size: 18px;
 }
 
 .Tools {
-    grid-area: s3
+    grid-area: s3;
+    display: flex;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #ff9b2a;
+    font-weight: bold;
+    align-items:center;
+}
+
+.Tool {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ff9b2a;
+    border-radius: 25px;
 }
 
 .DemoURL {
-    grid-area: s4
+    grid-area: s4;
+    font-size: 150px;
 }
 
 .GithubRepoURL {
-    grid-area: s5
+    grid-area: s5;
+    font-size: 150px;
 }

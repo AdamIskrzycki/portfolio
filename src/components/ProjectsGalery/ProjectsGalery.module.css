@@ -1,9 +1,11 @@
 .ProjectsGalery {
-    margin-top: 400px;
+    padding-top: 100px;
+    background-color: #000;
 }
 
 .MyProjectsHeader {
     text-align: center;
+    color: #fff;
     font-size: 54px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -13,7 +15,7 @@
 .ProjectsContainer {
     display: flex;
     width: 90%;
-    margin: 50px 5%;
+    margin: 0 5%;
     justify-content: center;
     row-gap: 150px;
     column-gap: 70px;
