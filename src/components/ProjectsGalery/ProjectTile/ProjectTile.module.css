@@ -1,9 +1,8 @@
 .ProjectTile {
     width: 90%;
-    height: 520px;
+    min-height: 520px;
     border-radius: 10px;
     text-align: center;
-    display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     transform: background-size;
@@ -11,40 +10,49 @@
     box-shadow: 8px 5px 24px 0px rgba(66, 68, 90, 1);
 }
 
+/*linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(32,67,179,1) 100%)*/
+
 .ProjectTile:hover {
-    background-color: #F7F7F7;
+    background-color: #E0F1F7;
     transform: scale(1.06);
     opacity: 0.95;
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out, background-color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out, box-shadow 0.7s ease-in-out, background-color 0.7s ease-in-out;
   }
 
 .ProjectInfoHidden {
-    visibility: hidden;
+    display: none;
 }
 .ProjectInfoVisible {
-    width: 90%;
-    display: grid;
-    grid-template-areas: " s1 s4 "
-                         " s2 . "
-                         " s3 s5 ";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.ProjectLinksContainer {
+    padding-right: 50px;
 }
 
 .Title {
-    grid-area: s1;
     margin: auto 0;
     font-size: 50px;
     text-transform: uppercase;
 }
 
 .Description {
-    grid-area: s2;
     width: 50%;
     margin: 20px auto;
     font-size: 18px;
 }
 
 .Tools {
-    grid-area: s3;
     display: flex;
     margin: 0 auto;
     font-size: 24px;
@@ -56,16 +64,55 @@
 .Tool {
     margin: 10px;
     padding: 10px;
-    border: 2px solid #ff9b2a;
+    border: 3px solid #ff9b2a;
     border-radius: 25px;
+    font-weight: bold;
+    text-shadow: .7px .7px #ff9b2a;
 }
 
 .DemoURL {
-    grid-area: s4;
     font-size: 150px;
 }
 
 .GithubRepoURL {
-    grid-area: s5;
     font-size: 150px;
 }
+
+.DemoURL:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: transform 200ms ease-in-out;
+}
+
+.GithubRepoURL:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: transform 200ms ease-in-out;
+}
+
+@media (max-width: 1100px) {
+    .ProjectInfoVisible {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Tools {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ProjectDetailsContainer {
+        padding-top: 40px;
+    }
+
+    .ProjectLinksContainer {
+        display: flex;
+        padding-top: 40px;
+        column-gap: 10%;
+    }
+
+    .Title {
+        padding: 0 15px;
+    }
+  }
