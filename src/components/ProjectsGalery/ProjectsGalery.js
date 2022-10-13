@@ -11,6 +11,7 @@ const ProjectsGalery = () => {
                 return <ProjectTile 
                 title={ProjectList[index].title}
                 imageURL={ProjectList[index].imageURL}
+                mobileImageURL={ProjectList[index].mobileImageURL}
                 description={ProjectList[index].description}
                 tools={ProjectList[index].tools}
                 demoURL={ProjectList[index].demoURL}

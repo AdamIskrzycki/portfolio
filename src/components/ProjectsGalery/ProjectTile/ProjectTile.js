@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import classes from './ProjectTile.module.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
@@ -6,15 +6,28 @@ import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 const ProjectTile = (props) => {
 
     const [isInfoVisible, setIsInfoVisible] = useState(false);
+    const [mobileView, setMobileView] = useState(false);
 
     const toggleInfo = () => {
         setIsInfoVisible(!isInfoVisible);
     }
 
+    const resizeWindow = () => {
+        if(window.innerWidth < 1000) {
+            setMobileView(true);
+        } else setMobileView(false);
+    }
+
+    useEffect(() => {
+        resizeWindow();
+        window.addEventListener("resize", resizeWindow);
+        return () => window.removeEventListener("resize", resizeWindow);
+      }, [mobileView]);
+
     return <div onMouseOver={toggleInfo} onMouseOut={toggleInfo} className={classes.ProjectTile} style={
-        isInfoVisible ? 
+        isInfoVisible ?
         { backgroundImage: "none" } :
-        { backgroundImage: `url(/${props.imageURL})` }
+        { backgroundImage: `url(/${mobileView ? props.mobileImageURL : props.imageURL})`}
     }>
         <div className={isInfoVisible ? classes.ProjectInfoVisible : classes.ProjectInfoHidden}>
             <div className={classes.ProjectDetailsContainer}>

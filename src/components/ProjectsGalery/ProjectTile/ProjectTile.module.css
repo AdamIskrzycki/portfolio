@@ -37,7 +37,7 @@
 }
 
 .ProjectLinksContainer {
-    padding-right: 50px;
+     padding-right: 50px; 
 }
 
 .Title {
@@ -90,7 +90,19 @@
     transition: transform 200ms ease-in-out;
 }
 
+
 @media (max-width: 1100px) {
+    .ProjectTile {
+        background-size: cover;    
+        /* box-shadow: none;
+        border-radius: 0px;
+        background-size: contain;   */
+    }
+}
+
+
+@media (max-width: 1400px) {
+
     .ProjectInfoVisible {
         width: 100%;
         flex-direction: column;
@@ -100,19 +112,36 @@
     .Tools {
         flex-wrap: wrap;
         justify-content: center;
+        font-size: 20px;
     }
 
     .ProjectDetailsContainer {
         padding-top: 40px;
     }
 
+   
     .ProjectLinksContainer {
         display: flex;
+        justify-content: center;
         padding-top: 40px;
         column-gap: 10%;
+        width: 100%;
+        padding-left: 50px; 
     }
 
     .Title {
         padding: 0 15px;
+    }
+
+    .Description {
+        width: 80%;
+    }
+
+    .DemoURL {
+        font-size: 130px;
+    }
+    
+    .GithubRepoURL {
+        font-size: 130px;
     }
   }
