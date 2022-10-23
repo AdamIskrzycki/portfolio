@@ -45,7 +45,7 @@ const HomePage = () => {
           <div className={classes.ProjectsIcon} onClick={handleClick}>
             <ArrowDownwardIcon fontSize="inherit" />
           </div>
-        </section>
+        </section> 
         </div>
       </div>
       <div className={classes.Wave}>
