@@ -20,7 +20,7 @@ const HomePage = () => {
       <div className={classes.HomePageContainer}>
         <div className={classes.LeftTile}>
         <div className={classes.Image}>
-          <img alt="AdamIskrzycki" src="AdamIskrzycki.png"></img>
+          <img alt="AdamIskrzycki" src="/portfolio/AdamIskrzycki.png"></img>
         </div>
         <section className={classes.Greetings}>
           <span className={classes.Hello}>Hello</span>

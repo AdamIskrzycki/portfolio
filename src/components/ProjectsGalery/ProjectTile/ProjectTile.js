@@ -27,7 +27,7 @@ const ProjectTile = (props) => {
     return <div onMouseOver={toggleInfo} onMouseOut={toggleInfo} className={classes.ProjectTile} style={
         isInfoVisible ?
         { backgroundImage: "none" } :
-        { backgroundImage: `url(/${mobileView ? props.mobileImageURL : props.imageURL})`}
+        { backgroundImage: `url(/portfolio/${mobileView ? props.mobileImageURL : props.imageURL})`}
     }>
         <div className={isInfoVisible ? classes.ProjectInfoVisible : classes.ProjectInfoHidden}>
             <div className={classes.ProjectDetailsContainer}>
