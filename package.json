@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://AdamIskrzycki.github.io/portfolio",
+  "homepage": "https://adamiskrzycki.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",

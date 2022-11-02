@@ -6,7 +6,7 @@ import ProjectsGalery from './components/ProjectsGalery/ProjectsGalery';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={HomePage}></Route>
           <Route path="/projects" component={ProjectsGalery}></Route>
