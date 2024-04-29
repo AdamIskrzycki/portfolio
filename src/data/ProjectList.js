@@ -2,9 +2,9 @@ export const ProjectList = [
     {
         id: 1,
         title: 'Online shop',
-        imageURL: "onlineshop.png",
-        mobileImageURL: "onlineshop-mobile.png",
-        description: 'This project is an imitation of an online shop. You can order products from the shop, modify cart content and checkout. App features an authentication and admin panel, that lets you manage the store stock - add and delete products or change their prices.',
+        imageURL: "onlineshop-new.png",
+        mobileImageURL: "onlineshop-new-mobile.png",
+        description: 'This project is my thesis project and an imitation of an online shop. You can order products from the shop, modify cart content and checkout. App features an authentication and admin panel, that lets you manage the store stock - add, delete, update products in stock',
         tools: [
             "JavaScript",
             "ReactJS",
@@ -14,8 +14,8 @@ export const ProjectList = [
             "MaterialUI",
             "Axios"
         ],
-        demoURL: "https://shop-308e8.web.app/",
-        githubRepoURL: "https://github.com/AdamIskrzycki/shop" 
+        demoURL: "https://sklep-inz.web.app/",
+        githubRepoURL: "https://github.com/AdamIskrzycki/sklep-inz"
     },
     {
         id: 2,

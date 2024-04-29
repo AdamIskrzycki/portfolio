@@ -30,7 +30,7 @@ const HomePage = () => {
         <div className={classes.RightTile}>
         <section className={classes.AboutMeContainer}>
           <article className={classes.AboutMe}>
-            My name is Adam Iskrzycki. I am a twenty-one-year-old student with a
+            My name is Adam Iskrzycki. I am a twenty-three-year-old beginner front-end developer with a
             positive attitude to life, who likes learning new things and taking on
             challenges. I am passionate about science and programming. My main
             goal is to expand my knowledge about front-end web development and
