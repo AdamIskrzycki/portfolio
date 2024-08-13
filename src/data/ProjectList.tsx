@@ -25,6 +25,7 @@ export const ProjectList = [
         description: 'A small app that presents you a simple memory game about recognizing and remembering patterns. As soon as you read the game rules, you are ready to start playing!',
         tools: [
             "JavaScript",
+            "TypeScript",
             "ReactJS",
             "CSS3",
             "React Router",
@@ -42,6 +43,7 @@ export const ProjectList = [
         description: 'This project was developed cooperatively with my brother. He took care of the backend side of the application, creating an algorithm which gathers IT job offers and stores them in an API. I created a frontend layout for these offers to be displayed. The app features some handy functionalities such as infinite scroll and language translation.',
         tools: [
             "JavaScript",
+            "TypeScript",
             "CSS3",
             "ReactJS",
             "MaterialUI",
@@ -58,6 +60,7 @@ export const ProjectList = [
         description: 'Unsplash lets you browse high-quality images. Simply search for a phrase and appropriate images will be displayed on your screen. By clicking on an image, you can see the author and place, where the photo was taken (if this information was provided). Project uses UnsplashAPI.',
         tools: [
             "JavaScript",
+            "TypeScript",
             "CSS3",
             "ReactJS",
             "MaterialUI",

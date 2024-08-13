@@ -3,7 +3,17 @@ import classes from './ProjectTile.module.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
-const ProjectTile = (props) => {
+interface ProjectTileProps {
+    title: string,
+    imageURL: string,
+    mobileImageURL: string,
+    description: string,
+    tools: string[]
+    demoURL: string,
+    githubRepoURL: string
+}
+
+const ProjectTile: React.FC<ProjectTileProps> = (props) => {
 
     const [isInfoVisible, setIsInfoVisible] = useState(false);
     const [mobileView, setMobileView] = useState(false);

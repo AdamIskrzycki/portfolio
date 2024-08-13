@@ -4,7 +4,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-const Footer = (props) => {
+const Footer: React.FC = () => {
     return <section className={classes.Footer}>
         <div className={classes.FeelFree}>FEEL FREE TO CONTACT ME!</div>
         <div className={classes.ContactInfo}>
