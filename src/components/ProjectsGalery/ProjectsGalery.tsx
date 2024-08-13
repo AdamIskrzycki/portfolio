@@ -3,7 +3,7 @@ import ProjectTile from './ProjectTile/ProjectTile';
 import React from 'react';
 import { ProjectList } from '../../data/ProjectList';
 
-const ProjectsGalery = () => {
+const ProjectsGalery: React.FC = () => {
     return <div className={classes.ProjectsGalery}>
         <header className={classes.MyProjectsHeader}>MY PROJECTS</header>
         <section className={classes.ProjectsContainer}>

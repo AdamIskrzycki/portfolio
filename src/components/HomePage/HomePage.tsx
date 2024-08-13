@@ -5,12 +5,12 @@ import { useRef } from 'react';
 import ProjectsGalery from "../ProjectsGalery/ProjectsGalery";
 import Footer from '../Footer/Footer';
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
 
-  const galeryRef = useRef(null);
+  const galeryRef = useRef<null | HTMLDivElement>(null);
 
   const handleClick = () => {
-    galeryRef.current.scrollIntoView({ behavior: 'smooth' });
+    galeryRef.current!.scrollIntoView({ behavior: 'smooth' });
 
   }
 
@@ -33,11 +33,11 @@ const HomePage = () => {
             My name is Adam Iskrzycki. I am a twenty-three-year-old beginner front-end developer with a
             positive attitude to life, who likes learning new things and taking on
             challenges. I am passionate about science and programming. My main
-            goal is to expand my knowledge about front-end web development and
-            create apps, that would make life easier and more convenient. The
+            goal is to expand my knowledge about web development and create 
+            apps, that would make life easier and more convenient. The
             technologies and tools I am familiar with are:{" "}
             <strong>
-              HTML5, CSS3, JavaScript, ES6, ReactJS, Redux, Firebase, Material-UI,
+              HTML5, CSS3, SCSS, JavaScript, TypeScript, ReactJS, NodeJS, Redux, Firebase, Material-UI,
               Git.{" "}
             </strong>{" "}
             Go check out my projects!
