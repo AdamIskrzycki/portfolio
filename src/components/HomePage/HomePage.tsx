@@ -30,15 +30,15 @@ const HomePage: React.FC = () => {
         <div className={classes.RightTile}>
         <section className={classes.AboutMeContainer}>
           <article className={classes.AboutMe}>
-            My name is Adam Iskrzycki. I am a twenty-three-year-old beginner front-end developer with a
+            My name is Adam Iskrzycki. I am a twenty-three-year-old web solutions and data enthusiast with a
             positive attitude to life, who likes learning new things and taking on
-            challenges. I am passionate about science and programming. My main
-            goal is to expand my knowledge about web development and create 
+            challenges. I am passionate about data analysis and programming. My main
+            goal is to expand my knowledge about web development and data analysis and create 
             apps, that would make life easier and more convenient. The
             technologies and tools I am familiar with are:{" "}
             <strong>
-              HTML5, CSS3, SCSS, JavaScript, TypeScript, ReactJS, NodeJS, Redux, Firebase, Material-UI,
-              Git.{" "}
+              HTML5, CSS3, SCSS, JavaScript, Python, NodeJS, ReactJS, TypeScript, Redux, Firebase,
+              Git, SQL, PowerBI.{" "}
             </strong>{" "}
             Go check out my projects!
           </article>
