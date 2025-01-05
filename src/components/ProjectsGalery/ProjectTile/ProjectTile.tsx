@@ -48,7 +48,7 @@ const ProjectTile: React.FC<ProjectTileProps> = (props) => {
                 })}</section>
             </div>
             <div className={classes.ProjectLinksContainer}>
-                <section className={classes.DemoURL}>{
+                <section className={classes.DemoURL} style={{visibility: props.demoURL !== '' ? 'visible' : 'hidden'}}>{
                 <a href={props.demoURL} target="_blank"><OpenInBrowserIcon fontSize="inherit" style={{ color: 'ff9b2a' }}></OpenInBrowserIcon></a>
                 }</section>
                 <section className={classes.GithubRepoURL}>{

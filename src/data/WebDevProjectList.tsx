@@ -1,4 +1,4 @@
-export const ProjectList = [
+export const WebDevProjectList = [
     {
         id: 1,
         title: 'Online shop',
